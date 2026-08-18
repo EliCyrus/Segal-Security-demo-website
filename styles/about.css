@@ -1,0 +1,82 @@
+.about-header-text{
+    color: #FFD700;
+}
+.about-div-header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#about{
+    padding-top: 100px;
+}
+.about-header-title{
+    font-family: 'Satoshi', sans-serif;
+    font-size: clamp(30px,4vw, 70px);
+    color: #0A2548;
+    text-align: center;
+    margin-bottom: 0px;
+}
+.about-header-span{
+   color: #FFD700;
+}
+.about-subheader-text{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: clamp(16px, 1.7vw, 20px);
+    line-height: 40px;
+    margin-top: 10px;
+}
+.about-cards-div{
+    display: flex;
+    padding: 0px 100px;
+    gap: 20px;
+}
+.about-card-div{
+    border: 1px solid rgba(200, 155, 60, 0.25);
+    border-radius: 20px;
+
+    box-shadow:
+        0 0 0 1px rgba(255,255,255,0.03) inset,
+        0 20px 50px rgba(10,37,72,0.08);
+    flex: 1;
+    display: flex;
+    gap: 20px;
+    padding: 10px 15px;
+    justify-content: center;
+}
+.about-icon-div{
+    border: 2px solid  #FFD700;
+    border-radius: 100%;
+    padding: 15px;
+    cursor: pointer;
+}
+.about-left-side{
+    padding-top: 8px
+}
+.about-card-header{
+    color:  #FFD700;
+    font-size: clamp(16px, 1.7vw, 20px)
+}
+.about-card-title{
+    color:#0A2548;
+    font-size: clamp(20px,1.7vw, 25px)
+}
+.about-card-spacer{
+    color: #FFD700;
+}
+.about-card-description{
+    color: rgba(0, 0, 0, 0.7);
+    line-height: 1.7;
+    font-size: clamp(16px, 1.7vw, 20px);
+}
+@media(max-width: 800px){
+    .about-cards-div{
+        flex-direction: column;
+    }
+}
+
+.show{
+     transform: translateY(0px)scale(1);
+     filter: blur(0px);
+}

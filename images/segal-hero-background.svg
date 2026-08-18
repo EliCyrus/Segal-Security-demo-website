@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="white"/>
+
+  <defs>
+    <g id="tile">
+      <rect x="-70" y="-70" width="140" height="140" rx="24"
+            fill="none" stroke="#D9E5F6" stroke-width="1.2"/>
+      <rect x="-48" y="-48" width="96" height="96" rx="18"
+            fill="none" stroke="#EDF4FC" stroke-width="1"/>
+      <circle cx="0" cy="0" r="2" fill="#D9E5F6"/>
+    </g>
+  </defs>
+
+  <!-- Organic staggered layout -->
+  <use href="#tile" transform="translate(120,120)"/>
+  <use href="#tile" transform="translate(430,90)"/>
+  <use href="#tile" transform="translate(760,150)"/>
+  <use href="#tile" transform="translate(1110,100)"/>
+  <use href="#tile" transform="translate(1480,140)"/>
+  <use href="#tile" transform="translate(1780,80)"/>
+  <use href="#tile" transform="translate(280,300)"/>
+  <use href="#tile" transform="translate(640,340)"/>
+  <use href="#tile" transform="translate(980,290)"/>
+  <use href="#tile" transform="translate(1320,330)"/>
+  <use href="#tile" transform="translate(1660,300)"/>
+  <use href="#tile" transform="translate(110,520)"/>
+  <use href="#tile" transform="translate(450,560)"/>
+  <use href="#tile" transform="translate(820,500)"/>
+  <use href="#tile" transform="translate(1180,550)"/>
+  <use href="#tile" transform="translate(1540,520)"/>
+  <use href="#tile" transform="translate(1860,560)"/>
+  <use href="#tile" transform="translate(320,760)"/>
+  <use href="#tile" transform="translate(700,800)"/>
+  <use href="#tile" transform="translate(1040,740)"/>
+  <use href="#tile" transform="translate(1410,790)"/>
+  <use href="#tile" transform="translate(1740,760)"/>
+  <use href="#tile" transform="translate(100,980)"/>
+  <use href="#tile" transform="translate(470,930)"/>
+  <use href="#tile" transform="translate(860,990)"/>
+  <use href="#tile" transform="translate(1230,940)"/>
+  <use href="#tile" transform="translate(1600,980)"/>
+
+</svg>

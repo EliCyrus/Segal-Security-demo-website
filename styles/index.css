@@ -1,0 +1,247 @@
+body{
+    background: #05070b;
+    font-family: 'Inter', arial;
+}
+a{
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+.background{
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    overflow: hidden;
+    background-color: white;
+}
+.grid{
+    position: absolute;
+    inset: 0;
+    opacity: 0.55;
+    background-image: url('./images/segal-hero-background.svg');
+    background-size: 1000px 1000px;
+}
+.header-name{
+    color: white;
+    font-size: clamp(22px, 2.5vw, 35px);
+    font-family: 'Satoshi', sans-serif;
+    margin: 0px 0px 0px 0px;
+}
+.header-div{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(
+        180deg,
+        #123A6B 0%,
+        #0A2548 100%
+    );
+    display: flex;
+    height: clamp(70px, 8vw, 100px);
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+   
+}
+    
+.header-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: clamp(10px, 1.5vw, 20px);
+    width: 80%;
+    background-color: tran;
+   
+    background: rgba(255, 255, 255, 0.12);
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 0.35);
+    margin: 0px;
+    padding: 0px clamp(10px, 1.5vw, 25px);
+    border-radius: clamp(12px, 1.5vw, 20px);
+    height: clamp(44px, 5vw, 70px);
+   
+}
+
+.home-nav{
+    text-decoration: none;
+    color: #05070b ;
+    font-size: clamp(13px, 1.2vw, 20px);
+    font-family: 'Inter', arial;
+    color: white;
+    transition: color 0.7s ease, text-decoration 0.7s ease;
+}
+.home-nav:hover{
+color: #FFD700;
+text-decoration: underline;
+}
+.middle-header-div{
+    display: flex;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    gap: clamp(10px, 1.8vw, 28px);
+
+    background: transparent;
+    padding: clamp(4px, .7vw, 8px) clamp(8px, 1.2vw, 16px);
+    padding-right: clamp(20px, 3vw, 50px);
+    border-right: 1px solid rgba(255, 255, 255, 0.213);
+}
+.left-header-div{
+    display: flex;
+    align-items: center;
+    gap: clamp(6px, 1vw, 20px);
+}
+
+.get-in-touch-button{
+    background:linear-gradient(
+        180deg,
+        #0E2F59,
+        #0A2548
+    );
+    color:white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: clamp(95px, 10vw, 140px);
+    height: clamp(32px, 3.5vw, 44px);
+    font-size: clamp(12px, 1vw, 16px);
+    font-family: 'Inter', Arial;
+    box-shadow:
+        0 10px 25px rgba(10,37,72,.20);
+    border:1px solid rgba(255,255,255,.08);
+}
+.get-in-touch-button:hover{
+    box-shadow: 0 18px 40px rgba(10,37,72,.30);
+}
+.hamburger-menu{
+    width: clamp(30px, 4vw, 50px);
+    display: none;
+    cursor: pointer;
+}
+@media(max-width: 830px){
+    .get-in-touch-button{
+        display: none;
+    }
+    .hamburger-menu{
+        display: inline-block;
+    }
+    .middle-header-div{
+        display: none;
+    }
+    .header-wrapper{
+        width: 90%;
+    }
+}
+.website-title-div{
+    display: flex;
+    font-family: 'Satoshi', sans-serif ;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 0px 0px 0px;
+    font-size: clamp(50px, 4.2vw, 70px);
+}
+.website-acronym{
+    font-size: clamp(50px, 4.2vw, 70px);
+    font-style: italic;
+    color: #FFD700;
+    margin: 0px 0px 0px 0px;
+}
+.website-title{
+    text-align: center;
+    font-size: clamp(20px, 3vw, 70px);
+}
+#home{
+    padding-top: 100px;
+}
+.header-description{
+    color: rgba(0, 0, 0, 0.7);
+    font-size: clamp(16px, 2vw, 25px);
+    text-align: center;
+}
+.contact-us-button{
+    background: linear-gradient(
+        180deg,
+        #123A6B 0%,
+        #0A2548 100%
+    );
+
+    color: #FFFFFF;
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    border-radius: 999px;
+    padding: clamp(12px,1.5vw,20px) clamp(24px,3vw,40px);
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(16px, 1vw, 1rem);
+
+    cursor: pointer;
+
+    box-shadow:
+        0 8px 20px rgba(10,37,72,.18),
+        inset 0 1px 0 rgba(255,255,255,.08);
+   
+}
+
+.contact-us-button:hover{
+    background: linear-gradient(
+        180deg,
+        #174780 0%,
+        #0E2F59 100%
+    );
+    border-color: #1E4D7A;
+    box-shadow:
+        0 0 5px rgba(30,77,122,.9),
+        0 0 15px rgba(30,77,122,.65),
+        0 0 30px rgba(30,77,122,.35),
+        0 12px 30px rgba(10,37,72,.25);
+
+}
+.contact-us-button:active{
+    background: linear-gradient(
+        180deg,
+        #0A2548 0%,
+        #071C36 100%
+    );
+
+    border-color: #1E4D7A;
+
+    box-shadow:
+        0 0 5px rgba(30,77,122,.7),
+        0 0 15px rgba(30,77,122,.4);
+
+    transform: translateY(1px);
+}
+.phone-number-div{
+    display: flex;
+    gap: 10px;
+}
+.phone-image{
+    width: 30px;
+}
+.header-logo{
+    width: clamp(30px, 3.5vw, 50px);
+}
+.guard-image{
+    width: clamp(325px, 54vw, 800px);
+    border-radius:25px;
+}
+.guard-image-div{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+.hidden{
+    transform: translateY(25px) scale(0.5);
+    filter: blur(4px);
+    transition: transform 1s ease, scale 1s ease, filter 0.7s ease
+    ;
+}
