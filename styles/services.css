@@ -3,87 +3,101 @@
     flex-direction: column;
     align-items: center;
 }
+
 .services-header-div p{
     margin: 0px 0px;
-    
 }
+
 #services{
-    padding-top: 100px;
+    padding-top: clamp(60px, 10vw, 100px);
 }
+
 .services-header-underline{
-     color: #FFD700;
+    color: #FFD700;
 }
+
 .services-title-text{
     text-align: center;
     font-family: 'Satoshi', sans-serif;
-     font-size: clamp(30px,4vw, 70px);
+    font-size: clamp(30px,4vw,70px);
 }
+
 .services-header-text{
     font-size: clamp(16px, 1.3vw, 20px);
 }
+
 .services-title-span{
     color: #FFD700;
     font-style: italic;
 }
+
 .services-subtitle-text{
     text-align: center;
     color: rgba(0,0,0,0.7);
     font-size: clamp(16px, 1.7vw, 20px);
 }
+
 .service-card-icon{
-    width: 100px;
+    width: clamp(70px, 7vw, 100px);
 }
+
 .services-grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-    padding: 20px 100px;
+    gap: clamp(15px, 2vw, 20px);
+    padding: clamp(15px, 2vw, 20px) clamp(20px, 7vw, 100px);
 }
-.service-card{
-    padding: 10px 16px;
-    border: 1px solid rgba(10, 37, 72, 0.15);
-border-radius: 20px;
-box-shadow: 0 8px 25px rgba(10, 37, 72, 0.08);
-display: flex;
-flex-direction: column;
-align-items: center;
 
+.service-card{
+    padding: clamp(8px, 1vw, 10px) clamp(10px, 1.5vw, 16px);
+    border: 1px solid rgba(10, 37, 72, 0.15);
+    border-radius: clamp(15px, 2vw, 20px);
+    box-shadow: 0 8px 25px rgba(10, 37, 72, 0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 .service-card-text{
     color: rgba(0,0,0,0.7);
     text-align: center;
     margin-bottom: auto;
 }
+
 .service-card-title{
     text-align: center;
-    margin-left: auto ;
+    margin-left: auto;
     margin-right: auto;
 }
+
 .service-card-arrow{
-    width: 50px;
+    width: clamp(35px, 3.5vw, 50px);
     cursor: pointer;
 }
+
 @media(max-width: 1100px){
     .services-grid{
         grid-template-columns: 1fr 1fr;
     }
-
 }
+
 @media(max-width: 830px){
-     .services-grid{
+    .services-grid{
         grid-template-columns: 1fr;
     }
 }
+
 .services-hidden{
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 1s ease, transform 2s ease;
-
 }
+
 .services-show{
     opacity: 1;
     transform: translateY(0);
 }
+
 .service-card:nth-child(1){ transition-delay: 0s; }
 .service-card:nth-child(2){ transition-delay: 0.08s; }
 .service-card:nth-child(3){ transition-delay: 0.16s; }

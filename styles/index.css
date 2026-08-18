@@ -21,7 +21,7 @@ html{
     inset: 0;
     opacity: 0.55;
     background-image: url('./images/segal-hero-background.svg');
-    background-size: 1000px 1000px;
+    background-size: clamp(500px, 70vw, 1000px);
 }
 .header-name{
     color: white;
@@ -44,9 +44,7 @@ html{
     justify-content: center;
     align-items: center;
     z-index: 10;
-   
 }
-    
 .header-wrapper{
     display: flex;
     align-items: center;
@@ -54,14 +52,10 @@ html{
     gap: clamp(10px, 1.5vw, 20px);
     width: 80%;
     background-color: tran;
-   
     background: rgba(255, 255, 255, 0.12);
-
     backdrop-filter: blur(18px);
     -webkit-backdrop-filter: blur(18px);
-
     border: 1px solid rgba(255, 255, 255, 0.25);
-
     box-shadow:
         0 8px 30px rgba(0, 0, 0, 0.08),
         inset 0 1px 0 rgba(255, 255, 255, 0.35);
@@ -69,28 +63,25 @@ html{
     padding: 0px clamp(10px, 1.5vw, 25px);
     border-radius: clamp(12px, 1.5vw, 20px);
     height: clamp(44px, 5vw, 70px);
-   
 }
-
 .home-nav{
     text-decoration: none;
-    color: #05070b ;
+    color: #05070b;
     font-size: clamp(13px, 1.2vw, 20px);
     font-family: 'Inter', arial;
     color: white;
     transition: color 0.7s ease, text-decoration 0.7s ease;
 }
 .home-nav:hover{
-color: #FFD700;
-text-decoration: underline;
+    color: #FFD700;
+    text-decoration: underline;
 }
 .middle-header-div{
     display: flex;
-    gap: 20px;
+    gap: clamp(15px, 2vw, 20px);
     display: flex;
     align-items: center;
     gap: clamp(10px, 1.8vw, 28px);
-
     background: transparent;
     padding: clamp(4px, .7vw, 8px) clamp(8px, 1.2vw, 16px);
     padding-right: clamp(20px, 3vw, 50px);
@@ -101,7 +92,6 @@ text-decoration: underline;
     align-items: center;
     gap: clamp(6px, 1vw, 20px);
 }
-
 .get-in-touch-button{
     background:linear-gradient(
         180deg,
@@ -110,10 +100,10 @@ text-decoration: underline;
     );
     color:white;
     border: none;
-    border-radius: 8px;
+    border-radius: clamp(6px, 0.8vw, 8px);
     cursor: pointer;
-    width: clamp(95px, 10vw, 140px);
-    height: clamp(32px, 3.5vw, 44px);
+    width: clamp(90px, 9vw, 130px);
+    height: clamp(30px, 3vw, 38px);
     font-size: clamp(12px, 1vw, 16px);
     font-family: 'Inter', Arial;
     box-shadow:
@@ -144,7 +134,7 @@ text-decoration: underline;
 }
 .website-title-div{
     display: flex;
-    font-family: 'Satoshi', sans-serif ;
+    font-family: 'Satoshi', sans-serif;
     flex-direction: column;
     align-items: center;
     margin: 0px 0px 0px 0px;
@@ -161,7 +151,7 @@ text-decoration: underline;
     font-size: clamp(20px, 3vw, 70px);
 }
 #home{
-    padding-top: 100px;
+    padding-top: clamp(60px, 10vw, 100px);
 }
 .header-description{
     color: rgba(0, 0, 0, 0.7);
@@ -174,24 +164,17 @@ text-decoration: underline;
         #123A6B 0%,
         #0A2548 100%
     );
-
     color: #FFFFFF;
-
     border: 1px solid rgba(255,255,255,.08);
-
     border-radius: 999px;
     padding: clamp(12px,1.5vw,20px) clamp(24px,3vw,40px);
     font-family: 'Inter', sans-serif;
     font-size: clamp(16px, 1vw, 1rem);
-
     cursor: pointer;
-
     box-shadow:
         0 8px 20px rgba(10,37,72,.18),
         inset 0 1px 0 rgba(255,255,255,.08);
-   
 }
-
 .contact-us-button:hover{
     background: linear-gradient(
         180deg,
@@ -204,7 +187,6 @@ text-decoration: underline;
         0 0 15px rgba(30,77,122,.65),
         0 0 30px rgba(30,77,122,.35),
         0 12px 30px rgba(10,37,72,.25);
-
 }
 .contact-us-button:active{
     background: linear-gradient(
@@ -212,37 +194,33 @@ text-decoration: underline;
         #0A2548 0%,
         #071C36 100%
     );
-
     border-color: #1E4D7A;
-
     box-shadow:
         0 0 5px rgba(30,77,122,.7),
         0 0 15px rgba(30,77,122,.4);
-
     transform: translateY(1px);
 }
 .phone-number-div{
     display: flex;
-    gap: 10px;
+    gap: clamp(7px, 1vw, 10px);
 }
 .phone-image{
-    width: 30px;
+    width: clamp(25px, 2.5vw, 30px);
 }
 .header-logo{
     width: clamp(30px, 3.5vw, 50px);
 }
 .guard-image{
     width: clamp(325px, 54vw, 800px);
-    border-radius:25px;
+    border-radius: clamp(18px, 2.5vw, 25px);
 }
 .guard-image-div{
     display: flex;
     justify-content: center;
-    padding-top: 50px;
+    padding-top: clamp(30px, 5vw, 50px);
 }
 .hidden{
     transform: translateY(25px) scale(0.5);
     filter: blur(4px);
-    transition: transform 1s ease, scale 1s ease, filter 0.7s ease
-    ;
+    transition: transform 1s ease, scale 1s ease, filter 0.7s ease;
 }
