@@ -1,16 +1,15 @@
 .testimonial-header-text{
     color: #FFD700;
-    font-size: clamp(16px, 1.3vw, 20px);
+    font-size: clamp(13px, 1.3vw, 20px);
 }
 .testimonial-header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: clamp(12px, 1.5vw, 20px);
 }
 #testimonial{
-   
-    padding: 100px clamp(16px, 7vw, 80px);
+    padding: clamp(60px, 7vw, 100px) clamp(16px, 7vw, 80px);
 }
 .testimonial-header-title{
     font-size: clamp(30px,4vw,70px);
@@ -24,7 +23,7 @@
 }
 .testimonial-header-spacer-div{
     display: flex;
-    gap: 20px;
+    gap: clamp(12px, 1.5vw, 20px);
     align-items: center;
 }
 .testimonial-shield-icon{
@@ -33,25 +32,24 @@
 .testimonial-main-div{
     display: flex;
     justify-content: center;
-    gap: 50px;
-    padding-top: 50px;
+    gap: clamp(25px, 3.3vw, 50px);
+    padding-top: clamp(30px, 3.3vw, 50px);
 }
 .testimonial-left-div{
     display: flex;
-    gap: 20px;
+    gap: clamp(12px, 1.3vw, 20px);
     align-items: center;
 }
 .testimonial-card{
     display: flex;
     flex-direction: column;
-    max-width: 600px;
+    max-width: clamp(300px, 39vw, 600px);
     border:1px solid rgba(10, 37, 72, 0.15);
     border : 1px solid rgba(10, 37, 72, 0.15);
     border-radius: clamp(6px, 0.6vw, 8px);
     box-shadow: 0 8px 25px rgba(10, 37, 72, 0.08);
-    padding: 10px clamp(15px, 2vw, 25px);
-    gap: 20px;
-    
+    padding: clamp(8px, 0.7vw, 10px) clamp(12px, 2vw, 25px);
+    gap: clamp(12px, 1.3vw, 20px);
 }
 .testimonial-top-card{
     display: flex;
@@ -59,30 +57,30 @@
 }
 .testimonial-review-text{
     color: #0A2548;
-    font-size: 20px;
+    font-size: clamp(16px, 1.3vw, 20px);
 }
 .testimonial-card-info{
     display: flex;
-    gap: 20px;
+    gap: clamp(12px, 1.3vw, 20px);
     align-items: center;
 }
 .right-testimonial-card-info{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: clamp(6px, 0.7vw, 10px);
 }
 .testimonial-client{
     display: flex;
-    gap: 10px;
+    gap: clamp(6px, 0.7vw, 10px);
     align-items: end;
 }
 .testimonial-client-logo{
-    width: 60px;
-    height: 60px;
+    width: clamp(45px, 4vw, 60px);
+    height: clamp(45px, 4vw, 60px);
     display: block;
 }
 .testimonial-segal-logo{
-    width: 100px;
+    width: clamp(70px, 6.7vw, 100px);
 }
 .testimonial-client-right-div{
     display: flex;
@@ -97,20 +95,20 @@
     align-items: center;
 }
 .indicator-circle{
-    width: 20px;
-    height: 20px;
+    width: clamp(14px, 1.3vw, 20px);
+    height: clamp(14px, 1.3vw, 20px);
     border-radius: 100%;
     background-color: #A6A9AD ;
 }
 .indicator-line{
     width: 1px;
-    height: 90px;
+    height: clamp(60px, 6vw, 90px);
     background-color: #A6A9AD;
 }
 .client-image-wrapper{
     border:1px solid #A6A9AD;
     border-radius: 100%;
-    padding: clamp(10px, 1.5vw, 15px);
+    padding: clamp(8px, 1.2vw, 15px);
     cursor: pointer;
 }
 .testimonial-client-name{
@@ -120,15 +118,15 @@
 }
 .testimonial-client-role{
     color: #FFD700;
-    font-size: clamp(16px, 1.2vw, 18px);
+    font-size: clamp(14px, 1.2vw, 18px);
 }
 .testimonial-clients-div{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: clamp(12px, 1.3vw, 20px);
 }
 .testimonial-segal-logo-div{
-    padding-left: 80px ;
+    padding-left: clamp(30px, 5.3vw, 80px);
 }
 .testimonial-underline{
     background-color: #FFD700;
@@ -136,8 +134,8 @@
     height: 2px;
 }
 .testimonial-card-logo{
-    width: 50px;
-    height: 50px;
+    width: clamp(40px, 3.3vw, 50px);
+    height: clamp(40px, 3.3vw, 50px);
     display: block;
 }
 .card-info-wrapper{
@@ -149,16 +147,42 @@
     margin: 0;
     color: #0A2548;
     font-size: clamp(18px,1.3vw,20px);
-
 }
 .testimonial-card-role{
     margin: 0;
     color: #FFD700;
-    font-size: 16px;
+    font-size: clamp(14px, 1.1vw, 16px);
 }
 .selected-indicator-circle{
     background-color: #FFD700;
 }
+.testimonial-mobile-indicator-div{
+    display: none;
+}
 .selected-client-image-wrapper{
     border-color: #FFD700;
+}
+.mobile-segal-logo-div{
+    display: none;
+}
+.mobile-segal-logo{
+    width: clamp(60px, 5.3vw, 80px);
+}
+@media(max-width: 1000px){
+    .testimonial-main-div{
+        flex-direction: column;
+        align-items: center;
+    }
+    .testimonial-selected-indicator-div{
+        display: none;
+    }
+    .testimonial-mobile-indicator-div{
+        display: flex;
+    }
+    .testimonial-segal-logo-div{
+        display: none;
+    }
+    .mobile-segal-logo-div{
+        display: block;
+    }
 }
