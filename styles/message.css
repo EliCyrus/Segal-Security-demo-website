@@ -1,5 +1,5 @@
 #message{
-    padding: 0px clamp(20px, 7vw, 100px);
+    padding: 0px clamp(16px, 7vw, 100px);
 }
 .message-header-div{
     display: flex;
@@ -11,7 +11,7 @@
 }
 .message-header-text{
     color:#FFD700;
-    font-size: clamp(16px,1.3vw,20px);
+    font-size: clamp(14px,1.3vw,20px);
 }
 .message-header-title{
     font-family: 'Satoshi', sans-serif;
