@@ -7,15 +7,15 @@
     align-items: center;
 }
 .message-header-logo{
-    width: 50px;
+    width: clamp(35px, 3.5vw, 50px);
 }
 .message-header-text{
     color:#FFD700;
-    font-size: clamp(14px,1.3vw,20px);
+    font-size: clamp(11px,1.3vw,20px);
 }
 .message-header-title{
     font-family: 'Satoshi', sans-serif;
-    font-size: clamp(30px,4vw, 70px);
+    font-size: clamp(30px,4vw,70px);
     margin: 0px 0px;
     text-align: center;
 }
@@ -25,7 +25,7 @@
 }
 .message-left-div{
     border : 1px solid rgba(10, 37, 72, 0.15);
-    border-radius: 8px;
+    border-radius: clamp(6px, 0.6vw, 8px);
     box-shadow: 0 8px 25px rgba(10, 37, 72, 0.08);
 }
 .founder-image-div{
@@ -38,61 +38,59 @@
 }
 .message-main-div{
     display: flex;
-    gap: 20px;
+    gap: clamp(15px, 2vw, 20px);
     justify-content: center;
 }
 .message-right-div{
-border : 1px solid rgba(10, 37, 72, 0.15);
-border-radius: 8px;
-box-shadow: 0 8px 25px rgba(10, 37, 72, 0.08);
-padding: 10px 25px;
-max-width: clamp(400px, 47vw, 700px);
-
+    border : 1px solid rgba(10, 37, 72, 0.15);
+    border-radius: clamp(6px, 0.6vw, 8px);
+    box-shadow: 0 8px 25px rgba(10, 37, 72, 0.08);
+    padding: 10px clamp(15px, 2vw, 25px);
+    max-width: clamp(300px, 47vw, 700px);
 }
 .founder-image{
     width: clamp(250px, 29vw, 437px);
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+    border-top-left-radius: clamp(6px, 0.6vw, 8px);
+    border-top-right-radius: clamp(6px, 0.6vw, 8px);
     margin-bottom: -4px;
 }
 .founder-info-bottom-div{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: clamp(10px, 1.2vw, 15px);
 }
-
 .founder-role{
     font-size: clamp(13px, 1vw, 16px );
     color: #FFD700;
     margin-top: 0px;
 }
 .founder-name{
-    font-size: clamp(20px,2vw, 30px );
+    font-size: clamp(20px,2vw,30px );
     color: #0A2548;
     margin-bottom: 0px;
 }
 .message-right-div-header{
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: clamp(15px, 2vw, 30px);
 }
 .message-header-sideline{
     background-color: #FFD700;
     height: 2px;
-    width: clamp(500px, 62.5vw, 800px);
+    width: clamp(100px, 62.5vw, 800px);
 }
 .header-quote-mark{
-    width: clamp(30px,3.4vw, 50px);
+    width: clamp(30px,3.4vw,50px);
 }
 .founder-message{
-    margin-top: 30px;
+    margin-top: clamp(20px, 2vw, 30px);
     font-size: clamp(16px, 1.4vw, 22px);
-    line-height: clamp(30px, 2.7vw, 40px );
+    line-height: clamp(28px, 2.7vw, 40px );
 }
 .message-footer-div{
     display: flex;
-    gap: 30px;
+    gap: clamp(15px, 2vw, 30px);
     align-items: center;
 }
 .header-right-quote-mark{
@@ -102,7 +100,6 @@ max-width: clamp(400px, 47vw, 700px);
     opacity: 0.3;
     height: 2px;
     background-color: #FFD700;
-    
 }
 @media(max-width: 1300px){
     .message-main-div{
@@ -116,7 +113,7 @@ max-width: clamp(400px, 47vw, 700px);
 .read-more-button{
     color: white;
     display: flex;
-    padding: 10px 16px;
+    padding: clamp(8px, 1vw, 10px) clamp(12px, 1.5vw, 16px);
     align-items: center;
     background:linear-gradient(
         180deg,
@@ -124,16 +121,13 @@ max-width: clamp(400px, 47vw, 700px);
         #0A2548
     );
     border: 1px solid #FFD700;
-    border-radius: 8px;
+    border-radius: clamp(6px, 0.6vw, 8px);
     cursor: pointer;
-    gap: 20px;
+    gap: clamp(12px, 1.5vw, 20px);
     height: clamp(40px, 4vw, 60px );
     width: clamp(170px, 13vw, 200px);
     font-size: clamp(14px, 1.3vw, 20px) ;
-
 }
-
-
 .read-more-button:hover{
     box-shadow: 0 18px 40px rgba(10,37,72,.30);
 }
@@ -149,10 +143,10 @@ max-width: clamp(400px, 47vw, 700px);
 .message-header-text-div{
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: clamp(6px, 1vw, 10px);
 }
 .message-header-line{
     background-color: #FFD700;
     height: 2px;
-    width: clamp(30px, 3.4vw, 50px);
+    width: clamp(20px, 3.4vw, 50px);
 }
