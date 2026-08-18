@@ -1,5 +1,5 @@
 #message{
-    padding: 0px 100px;
+    padding: 0px clamp(20px, 7vw, 100px);
 }
 .message-header-div{
     display: flex;
