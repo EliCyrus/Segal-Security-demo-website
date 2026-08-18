@@ -11,6 +11,7 @@
 }
 .message-header-text{
     color:#FFD700;
+    font-size: clamp(16px,1.3vw,20px);
 }
 .message-header-title{
     font-family: 'Satoshi', sans-serif;
@@ -144,4 +145,14 @@ max-width: clamp(400px, 47vw, 700px);
 }
 .read-more-text{
     color: #FFD700;
+}
+.message-header-text-div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.message-header-line{
+    background-color: #FFD700;
+    height: 2px;
+    width: clamp(30px, 3.4vw, 50px);
 }
