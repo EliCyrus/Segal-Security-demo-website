@@ -15,6 +15,7 @@
     font-size: clamp(30px,4vw,70px);
     color: #0A2548;
     margin: 0;
+    font-family: 'Satoshi', sans-serif;
 }
 .testimonial-sideline{
     height: 2px;

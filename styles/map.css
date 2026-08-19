@@ -1,0 +1,50 @@
+.map-header-div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.map-header-text-div{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #FFD700;
+}
+.map-header-sidebar{
+    background-color: #FFD700;
+    width: 40px;
+    height: 2px;
+}
+.map-header-title{
+     font-family: 'Satoshi', sans-serif;
+    font-size: clamp(30px,4vw,70px);
+    margin: 0px 0px;
+    text-align: center;
+    color: #0A2548;
+}
+.map-header-sub-title{
+    color: rgba(0,0,0,0.7);
+    font-size: clamp(18px, 1.3vw, 20px);
+}
+.map-header-underline{
+    background-color: #FFD700;
+    width: 50px;
+    height: 2px;
+}
+.segal-map{
+width: clamp(300px, 70vw, 1000px);
+height: clamp(105px, 24.5vw, 350px);
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(10, 37, 72, 0.15);
+    box-shadow: 0 8px 25px rgba(10, 37, 72, 0.08);
+    
+}
+.map-div{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+#map{
+    padding-bottom: 100px;
+}

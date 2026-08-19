@@ -20,6 +20,7 @@ clientWrapper.forEach((wrapper, i)=> {
             }
         })
         indicatorCircle[i].classList.add('selected-indicator-circle')
+        indicatorCircle[i+3].classList.add('selected-indicator-circle')
 
         if (i === 0){
         card.innerHTML = ` <div class="testimonial-top-card">
