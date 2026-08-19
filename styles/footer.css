@@ -2,15 +2,14 @@
     display:flex;
     flex-direction:column;
     border-top:1px solid #A6A9AD;
-    padding:50px clamp(20px,4vw,50px);
+    padding:50px 50px;
     border-bottom:1px solid #FFD700;
     align-items:center;
 }
 .footer-top-div{
     display:flex;
     justify-content:center;
-    gap:clamp(50px,13vw,200px);
-    width:100%;
+    gap:200px;
 }
 .footer-name-div{
     display:flex;
@@ -18,13 +17,13 @@
 }
 .footer-name{
     color:#0a2548;
-    font-size:clamp(28px,2.3vw,35px);
+    font-size:35px;
 }
 .footer-acronym{
     color:#FFD700;
 }
 .footer-segal-logo{
-    width:clamp(90px,8vw,120px);
+    width:120px;
 }
 .footer-right-name-div{
     display:flex;
@@ -32,14 +31,14 @@
 }
 .footer-description-text{
     color:rgba(0,0,0,0.7);
-    font-size:clamp(16px,1.3vw,20px);
+    font-size:20px;
 }
 .social-media-icon{
     width:25px;
     display:block;
 }
 .social-media-button{
-    padding:15px;
+    padding:15px 15px;
     border-radius:100%;
     border:1px solid #A6A9AD;
     cursor:pointer;
@@ -48,26 +47,17 @@
 .link-div{
     display:flex;
     flex-direction:column;
-    gap:8px;
-    width:100%;
 }
 .footer-link{
-    display:grid;
-    grid-template-columns:minmax(0,1fr) 25px;
-    align-items:center;
-    gap:15px;
-    min-height:38px;
+    display:flex;
+    gap:20px;
     cursor:pointer;
 }
 .link-icon{
     width:25px;
-    display:block;
-    justify-self:end;
 }
 .footer-link-text{
-    margin:0;
-    color:rgba(0,0,0,0.7);
-    min-width:0;
+    margin-right:auto;
 }
 .link-underline{
     background-color:#FFD700;
@@ -75,21 +65,24 @@
     height:2px;
 }
 .footer-top-second-div{
-    display:grid;
-    grid-template-columns:minmax(220px,1fr) minmax(220px,1fr);
-    gap:clamp(40px,5vw,80px);
+    display:flex;
+    gap:80px;
 }
 .left-link-div{
     border-right:1px solid #A6A9AD;
-    padding-right:clamp(40px,5vw,80px);
+    padding-right:80px;
 }
 #footer{
-    padding:0 clamp(16px,3vw,30px);
+    padding:0px 30px;
 }
 .link-title{
-    font-size:clamp(20px,1.5vw,22px);
+    font-size:22px;
     color:#0a2548;
-    margin:0 0 10px;
+    margin:0;
+    margin-bottom:10px;
+}
+.footer-link-text{
+    color:rgba(0,0,0,0.7);
 }
 .social-media-div{
     margin-top:50px;
@@ -101,7 +94,6 @@
     justify-content:center;
     align-items:center;
     padding-top:50px;
-    width:100%;
 }
 .footer-contact-div{
     display:flex;
@@ -109,8 +101,6 @@
     border-right:1px solid #dddddd;
     padding-right:30px;
     align-items:center;
-    flex:1;
-    min-width:0;
 }
 .footer-contact-div:last-child{
     border-right:none;
@@ -119,16 +109,15 @@
     display:flex;
     flex-direction:column;
     gap:10px;
-    min-width:0;
 }
 .footer-wrapper-div{
     display:flex;
     justify-content:center;
-    width:min(100%,1050px);
     border:1px solid rgba(10,37,72,0.15);
-    border-radius:8px;
+    border-radius:clamp(6px,0.6vw,8px);
     box-shadow:0 8px 25px rgba(10,37,72,0.08);
     padding:10px 16px;
+    border-radius:8px;
     gap:30px;
 }
 .contact-icon{
@@ -136,15 +125,14 @@
     display:block;
 }
 .footer-contact-name{
-    margin:0;
+    margin:0px;
     color:#0a2548;
     font-weight:700;
 }
 .contact-wrapper{
     border:1px solid #FFD700;
     border-radius:100%;
-    padding:10px;
-    flex-shrink:0;
+    padding:10px 10px;
 }
 .footer-contact-info{
     margin:0;
@@ -154,9 +142,8 @@
     display:flex;
     flex-direction:column;
     align-items:center;
-    padding:25px 0;
+    padding:25px 0px;
     color:rgba(0,0,0,0.7);
-    text-align:center;
 }
 .footer-top-first-div{
     gap:80px;
@@ -164,18 +151,13 @@
 @media(max-width:1200px){
     .footer-top-div{
         flex-direction:column;
-        align-items:center;
-    }
-    .footer-top-first-div{
-        width:min(100%,700px);
     }
     .footer-top-second-div{
-        width:min(100%,700px);
+        flex-direction:column;
     }
     .left-link-div{
         border-bottom:1px solid #A6A9AD;
         border-right:none;
-        padding-right:0;
         padding-bottom:50px;
     }
     .footer-wrapper-div{
@@ -184,37 +166,9 @@
     .footer-contact-div{
         border-bottom:1px solid #dddddd;
         border-right:none;
-        padding-right:0;
         padding-bottom:20px;
     }
     .footer-contact-div:last-child{
         border:none;
-    }
-}
-@media(max-width:600px){
-    .footer-main-div{
-        padding:40px clamp(16px,5vw,30px);
-    }
-    .footer-top-second-div{
-        grid-template-columns:1fr;
-        gap:40px;
-    }
-    .left-link-div{
-        padding-bottom:35px;
-    }
-    .footer-top-first-div{
-        width:100%;
-    }
-    .footer-name-div{
-        align-items:center;
-    }
-    .footer-description-text{
-        line-height:1.5;
-    }
-    .social-media-div{
-        margin-top:30px;
-    }
-    .footer-bottom-div{
-        padding-top:35px;
     }
 }
