@@ -25,6 +25,9 @@ const observer = new IntersectionObserver((entries)=> {
             else if (entry.target.classList.contains('message-hidden')){
                 entry.target.classList.add('message-show')
             }
+            else if (entry.target.classList.contains('map-hidden')){
+                entry.target.classList.add('map-show')
+            }
            
         }
 
@@ -43,6 +46,7 @@ const testimonialLeftHidden = document.querySelectorAll('.testimonial-left-hidde
 const testimonialrightHidden = document.querySelectorAll('.testimonial-right-hidden')
 const testimonialHidden = document.querySelectorAll('.testimonial-hidden')
 const messageHidden = document.querySelectorAll('.message-hidden')
+const mapHidden = document.querySelectorAll('.map-hidden')
 activateObserver(hiddenElements)
 activateObserver(servicesHiddenElements)
 activateObserver(clientsHiddenElements)
@@ -51,3 +55,4 @@ activateObserver(testimonialLeftHidden)
 activateObserver(testimonialrightHidden)
 activateObserver(testimonialHidden)
 activateObserver(messageHidden)
+activateObserver(mapHidden)
