@@ -25,6 +25,7 @@
 .map-header-sub-title{
     color: rgba(0,0,0,0.7);
     font-size: clamp(18px, 1.3vw, 20px);
+    text-align: center;
 }
 .map-header-underline{
     background-color: #FFD700;
